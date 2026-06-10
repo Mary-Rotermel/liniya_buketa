@@ -12,7 +12,7 @@ export const products: Product[] = [
     composition: "Розы, альстромерии, оксипеталум, эвкалипт, писташ",
     price: "от 6 500 ₽",
     // Замените ссылку на реальное фото букета.
-    image: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=900&q=85",
+    image: "/images/baskets/nebo_v_ladonyax.PNG",
     alt: "Нежный авторский букет в пастельных оттенках"
   },
   {
