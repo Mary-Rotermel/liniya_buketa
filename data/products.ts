@@ -20,7 +20,7 @@ export const products: Product[] = [
     composition: "Пионовидные розы, диантус, эвкалипт",
     price: "от 6 700 ₽",
     // Замените ссылку на реальное фото букета.
-    image: "public/images/baskets/nebo_v_ladonyax.PNG",
+    image: "/images/baskets/nebo_v_ladonyax.PNG",
     alt: "Букет в оттенке пыльной розы"
   },
   {
