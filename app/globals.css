@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f7f3ef;
+  color: #2f2c2d;
+}
+
+::selection {
+  background: rgba(216, 167, 173, 0.45);
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+}
+
+.section-padding {
+  @apply py-20 sm:py-24 lg:py-28;
+}
+
+.focus-ring {
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-rose-dust;
+}
