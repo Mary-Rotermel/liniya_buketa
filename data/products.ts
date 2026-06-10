@@ -8,9 +8,9 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    name: "Нежное утро",
-    composition: "Розы, эустома, маттиола, сезонная зелень",
-    price: "от 5 900 ₽",
+    name: "Небесное прикосновение",
+    composition: "Розы, альстромерии, оксипеталум, эвкалипт, писташ",
+    price: "от 6 500 ₽",
     // Замените ссылку на реальное фото букета.
     image: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=900&q=85",
     alt: "Нежный авторский букет в пастельных оттенках"
@@ -20,7 +20,7 @@ export const products: Product[] = [
     composition: "Пионовидные розы, диантус, эвкалипт",
     price: "от 6 700 ₽",
     // Замените ссылку на реальное фото букета.
-    image: "https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=900&q=85",
+    image: "public/images/baskets/nebo_v_ladonyax.PNG",
     alt: "Букет в оттенке пыльной розы"
   },
   {
