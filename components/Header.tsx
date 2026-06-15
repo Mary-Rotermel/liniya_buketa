@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ButtonLink } from "@/components/ButtonLink";
 import { vkUrl } from "@/config/contacts";
 
@@ -16,8 +16,16 @@ const navItems = [
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
-    <header className="fixed left-0 top-0 z-50 w-full border-b border-white/70 bg-milk/85 backdrop-blur-2xl">
+    <header className="fixed left-0 top-0 z-[80] w-full border-b border-white/70 bg-milk/95 backdrop-blur-2xl">
       <div className="section-shell flex h-20 items-center justify-between gap-4">
         <Link href="#hero" className="shrink-0 font-display text-2xl font-bold text-graphite sm:text-3xl">
           Линия Букета
@@ -56,20 +64,25 @@ export function Header() {
       </div>
 
       <div
-        className={`fixed inset-x-0 top-20 z-40 border-b border-rose-dust/10 bg-milk/98 px-5 py-6 shadow-soft backdrop-blur-2xl transition xl:hidden ${
-          isOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-4 opacity-0"
+        className={`fixed inset-x-0 bottom-0 top-20 z-[70] overflow-y-auto bg-milk px-5 py-10 shadow-soft transition duration-300 xl:hidden ${
+          isOpen ? "translate-y-0 opacity-100" : "pointer-events-none -translate-y-3 opacity-0"
         }`}
       >
-        <nav className="grid gap-4 text-lg font-medium text-graphite">
+        <nav className="mx-auto grid max-w-xl gap-7 text-3xl font-semibold text-graphite">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} onClick={() => setIsOpen(false)}>
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setIsOpen(false)}
+              className="border-b border-rose-dust/10 pb-4 transition hover:text-rose-dust"
+            >
               {item.label}
             </Link>
           ))}
           <ButtonLink
             href={vkUrl()}
             external
-            className="mt-2"
+            className="mt-4 w-full max-w-sm"
           >
             Написать ВКонтакте
           </ButtonLink>

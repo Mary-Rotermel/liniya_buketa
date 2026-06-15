@@ -14,7 +14,7 @@ export const contacts = {
   // Замените ссылку на карточку организации в Яндекс.Картах.
   mapUrl: "https://yandex.ru/maps/org/101703110083?si=9g2v0ev05n92mau706f4mpzp2r",
   // Замените embed-ссылку, если будете использовать другой виджет Яндекс.Карт.
-  mapEmbedUrl: "https://yandex.ru/map-widget/v1/?oid=101703110083"
+  mapEmbedUrl: "https://yandex.ru/map-widget/v1/?mode=search&ol=biz&oid=101703110083&z=16"
 };
 
 export function vkUrl() {
