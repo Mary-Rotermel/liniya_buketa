@@ -15,8 +15,8 @@ html {
 }
 
 body {
-  background: #f7f3ef;
-  color: #2f2c2d;
+  background: #f8f3f0;
+  color: #292526;
 }
 
 ::selection {
@@ -29,6 +29,14 @@ body {
 
 .section-padding {
   @apply py-20 sm:py-24 lg:py-28;
+}
+
+.eyebrow {
+  @apply text-xs font-bold uppercase tracking-[0.24em] text-rose-dust;
+}
+
+.surface {
+  @apply border border-white/80 bg-white/75 shadow-soft;
 }
 
 .focus-ring {

@@ -1,9 +1,9 @@
 export function AboutSeo() {
   return (
     <section className="section-padding bg-white">
-      <div className="section-shell grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+      <div className="section-shell grid gap-10 rounded-[40px] bg-milk p-8 shadow-soft sm:p-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-rose-dust">SEO</p>
+          <p className="eyebrow mb-4">Беляево и ЮЗАО</p>
           <h2 className="font-display text-5xl font-bold leading-none text-graphite sm:text-6xl">
             Цветочный магазин у метро Беляево
           </h2>

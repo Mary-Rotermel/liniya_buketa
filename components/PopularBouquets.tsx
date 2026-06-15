@@ -8,9 +8,9 @@ export function PopularBouquets() {
       <div className="section-shell">
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
-            <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-rose-dust">Популярные букеты</p>
+            <p className="eyebrow mb-4">Популярные букеты</p>
             <h2 className="font-display text-5xl font-bold text-graphite sm:text-6xl">
-              Готовые идеи для заказа
+              Витрина любимых сочетаний
             </h2>
           </div>
           <p className="max-w-md text-taupe">
@@ -37,9 +37,11 @@ export function PopularBouquets() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-display text-3xl font-bold text-graphite">{product.name}</h3>
+                  <div className="flex items-start justify-between gap-4">
+                    <h3 className="font-display text-3xl font-bold leading-none text-ink">{product.name}</h3>
+                    <p className="shrink-0 rounded-full bg-white px-3 py-1 text-sm font-bold text-rose-dust">{product.price}</p>
+                  </div>
                   <p className="mt-3 min-h-12 text-sm leading-6 text-taupe">{product.composition}</p>
-                  <p className="mt-5 text-lg font-semibold text-graphite">{product.price}</p>
                   <div className="mt-5 grid grid-cols-2 gap-3">
                     <a
                       href={vkUrl()}

@@ -21,13 +21,13 @@ export function Reviews() {
   return (
     <section className="section-padding bg-milk">
       <div className="section-shell">
-        <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-rose-dust">Отзывы</p>
+        <p className="eyebrow mb-4">Отзывы</p>
         <h2 className="font-display text-5xl font-bold text-graphite sm:text-6xl">Тёплые слова клиентов</h2>
         <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {reviews.map((review) => (
-            <blockquote key={review.name} className="rounded-[28px] border border-rose-dust/10 bg-white p-7 shadow-soft">
+            <blockquote key={review.name} className="surface rounded-[30px] p-7">
               <p className="min-h-32 text-taupe">{review.text}</p>
-              <cite className="mt-8 block not-italic text-rose-dust">{review.name}</cite>
+              <cite className="mt-8 block not-italic font-semibold text-ink">{review.name}</cite>
             </blockquote>
           ))}
         </div>

@@ -22,15 +22,15 @@ export function Delivery() {
     <section id="delivery" className="section-padding bg-white">
       <div className="section-shell">
         <div className="max-w-3xl">
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-rose-dust">Доставка</p>
+          <p className="eyebrow mb-4">Доставка</p>
           <h2 className="font-display text-5xl font-bold text-graphite sm:text-6xl">
             Бережно привезём цветы по Москве
           </h2>
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {deliveryItems.map((item) => (
-            <div key={item.title} className="rounded-[28px] bg-milk p-7 shadow-soft">
-              <h3 className="font-display text-3xl font-bold text-graphite">{item.title}</h3>
+            <div key={item.title} className="rounded-[30px] border border-rose-dust/10 bg-milk p-7 shadow-soft">
+              <h3 className="font-display text-3xl font-bold text-ink">{item.title}</h3>
               <p className="mt-5 text-sm leading-6 text-taupe">{item.text}</p>
             </div>
           ))}

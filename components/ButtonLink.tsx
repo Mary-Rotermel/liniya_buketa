@@ -10,9 +10,9 @@ type ButtonLinkProps = {
 };
 
 const variants = {
-  primary: "bg-rose-dust text-white shadow-petal hover:bg-[#9a6f77]",
-  secondary: "border border-rose-dust/25 bg-white/85 text-rose-dust hover:bg-white",
-  ghost: "border border-white/60 bg-white/20 text-white backdrop-blur hover:bg-white/30"
+  primary: "bg-ink text-white shadow-editorial hover:bg-graphite",
+  secondary: "border border-rose-dust/25 bg-white/85 text-ink hover:border-rose-dust/45 hover:bg-white",
+  ghost: "border border-white/70 bg-white/20 text-white backdrop-blur hover:bg-white/30"
 };
 
 export function ButtonLink({

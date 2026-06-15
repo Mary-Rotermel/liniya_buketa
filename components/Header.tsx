@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { ButtonLink } from "@/components/ButtonLink";
@@ -18,13 +19,27 @@ export function Header() {
 
   return (
     <>
-      <header className="fixed left-0 top-0 z-[90] w-full border-b border-white/70 bg-milk/95 backdrop-blur-2xl">
+      <header className="fixed left-0 top-0 z-[90] w-full border-b border-rose-dust/10 bg-milk/92 backdrop-blur-2xl">
         <div className="section-shell flex h-20 items-center justify-between gap-4">
-          <Link href="#hero" className="shrink-0 font-display text-2xl font-bold text-graphite sm:text-3xl">
-            Линия Букета
+          <Link href="#hero" className="flex shrink-0 items-center gap-3">
+            <span className="relative h-12 w-12 overflow-hidden rounded-full border border-rose-dust/20 bg-blush shadow-petal">
+              <Image
+                src="/images/logo.png"
+                alt="Логотип Линия Букета"
+                fill
+                sizes="48px"
+                className="object-cover object-center"
+              />
+            </span>
+            <span className="grid leading-none">
+              <span className="font-display text-2xl font-bold text-ink sm:text-3xl">Линия Букета</span>
+              <span className="hidden text-[10px] font-bold uppercase tracking-[0.22em] text-rose-dust sm:block">
+                Цветы в Беляево
+              </span>
+            </span>
           </Link>
 
-          <nav className="hidden min-w-0 flex-1 items-center justify-center gap-4 text-sm font-medium text-taupe xl:flex">
+          <nav className="hidden min-w-0 flex-1 items-center justify-center gap-5 text-sm font-semibold text-taupe xl:flex">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="whitespace-nowrap transition hover:text-rose-dust">
                 {item.label}
@@ -74,11 +89,7 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <ButtonLink
-            href={vkUrl()}
-            external
-            className="mt-2 w-full sm:col-span-5 sm:mx-auto sm:mt-3 sm:max-w-sm"
-          >
+          <ButtonLink href={vkUrl()} external className="mt-2 w-full sm:col-span-5 sm:mx-auto sm:mt-3 sm:max-w-sm">
             Написать ВКонтакте
           </ButtonLink>
         </nav>

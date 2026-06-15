@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FormEvent, useState } from "react";
 import { contacts, phoneHref, telegramUrl, vkUrl } from "@/config/contacts";
 
@@ -17,21 +18,34 @@ export function ContactSection() {
   return (
     <section id="contacts" className="section-padding bg-porcelain">
       <div className="section-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="rounded-[34px] border border-white/80 bg-white/75 p-8 shadow-soft sm:p-10">
-          <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-rose-dust">Контакты</p>
-          <h2 className="font-display text-5xl font-bold text-graphite sm:text-6xl">Напишите нам</h2>
-          <div className="mt-8 grid gap-4 text-taupe">
+        <div className="surface min-w-0 rounded-[40px] p-8 sm:p-10">
+          <div className="flex items-start gap-5">
+            <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-rose-dust/20 bg-blush shadow-petal">
+              <Image
+                src="/images/logo.png"
+                alt="Логотип Линия Букета"
+                fill
+                sizes="80px"
+                className="object-cover object-center"
+              />
+            </div>
+            <div>
+              <p className="eyebrow mb-4">Контакты</p>
+              <h2 className="font-display text-5xl font-bold leading-none text-graphite sm:text-6xl">Напишите нам</h2>
+            </div>
+          </div>
+          <div className="mt-8 grid gap-3 text-taupe">
             {/* Замените контакты в файле config/contacts.ts. */}
-            <a className="w-fit text-rose-dust" href={phoneHref()}>
+            <a className="w-fit font-semibold text-ink" href={phoneHref()}>
               {contacts.phone}
             </a>
-            <a className="w-fit text-rose-dust" href={vkUrl()} target="_blank" rel="noreferrer">
+            <a className="w-fit font-semibold text-rose-dust" href={vkUrl()} target="_blank" rel="noreferrer">
               ВКонтакте
             </a>
-            <a className="w-fit text-rose-dust" href={telegramUrl()} target="_blank" rel="noreferrer">
+            <a className="w-fit font-semibold text-rose-dust" href={telegramUrl()} target="_blank" rel="noreferrer">
               Telegram
             </a>
-            <a className="w-fit text-rose-dust" href={contacts.instagramUrl} target="_blank" rel="noreferrer">
+            <a className="w-fit font-semibold text-rose-dust" href={contacts.instagramUrl} target="_blank" rel="noreferrer">
               Instagram
             </a>
             <p>{contacts.address}</p>
@@ -57,8 +71,9 @@ export function ContactSection() {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="rounded-[34px] bg-white p-8 shadow-soft sm:p-10">
-          <h3 className="font-display text-4xl font-bold text-graphite">Форма заявки</h3>
+        <form onSubmit={handleSubmit} className="min-w-0 rounded-[40px] bg-white p-8 shadow-editorial sm:p-10">
+          <p className="eyebrow mb-4">Заявка</p>
+          <h3 className="font-display text-5xl font-bold leading-none text-graphite">Расскажите, какой букет нужен</h3>
           <div className="mt-8 grid gap-5">
             <label className="grid gap-2 text-sm font-semibold text-taupe">
               Имя
@@ -98,7 +113,7 @@ export function ContactSection() {
             </label>
             <button
               type="submit"
-              className="focus-ring min-h-12 rounded-full bg-rose-dust px-6 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-[#9a6f77]"
+              className="focus-ring min-h-12 rounded-full bg-ink px-6 text-sm font-semibold text-white shadow-editorial transition hover:-translate-y-0.5 hover:bg-graphite"
             >
               Отправить заявку
             </button>
