@@ -7,7 +7,7 @@ const steps = [
 
 export function HowToOrder() {
   return (
-    <section className="section-padding bg-milk">
+    <section id="order" className="section-padding bg-milk">
       <div className="section-shell">
         <div className="max-w-3xl">
           <p className="eyebrow mb-4">Как заказать</p>

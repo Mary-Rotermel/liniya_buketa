@@ -8,8 +8,9 @@ import { vkUrl } from "@/config/contacts";
 
 const navItems = [
   { href: "#catalog", label: "Каталог" },
-  { href: "#popular", label: "Букеты" },
-  { href: "#palette", label: "Палитра" },
+  { href: "#popular", label: "Готовые букеты" },
+  { href: "#palette", label: "Цветы поштучно" },
+  { href: "#order", label: "Как заказать" },
   { href: "#delivery", label: "Доставка" },
   { href: "#contacts", label: "Контакты" }
 ];
@@ -39,7 +40,7 @@ export function Header() {
             </span>
           </Link>
 
-          <nav className="hidden min-w-0 flex-1 items-center justify-center gap-5 text-sm font-semibold text-taupe xl:flex">
+          <nav className="hidden min-w-0 flex-1 items-center justify-center gap-4 text-sm font-semibold text-taupe xl:flex">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="whitespace-nowrap transition hover:text-rose-dust">
                 {item.label}
@@ -78,7 +79,7 @@ export function Header() {
         }`}
         aria-hidden={!isOpen}
       >
-        <nav className="mx-auto grid max-w-3xl gap-4 text-lg font-semibold text-graphite sm:grid-cols-5 sm:items-center sm:gap-5">
+        <nav className="mx-auto grid max-w-3xl gap-4 text-lg font-semibold text-graphite sm:grid-cols-2 sm:items-center sm:gap-5 lg:grid-cols-3">
           {navItems.map((item) => (
             <Link
               key={item.href}
@@ -89,7 +90,7 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <ButtonLink href={vkUrl()} external className="mt-2 w-full sm:col-span-5 sm:mx-auto sm:mt-3 sm:max-w-sm">
+          <ButtonLink href={vkUrl()} external className="mt-2 w-full sm:col-span-2 sm:mx-auto sm:mt-3 sm:max-w-sm lg:col-span-3">
             Написать ВКонтакте
           </ButtonLink>
         </nav>
