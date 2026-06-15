@@ -37,18 +37,24 @@ export function ContactSection() {
             <p>{contacts.address}</p>
             <p>{contacts.workingHours}</p>
           </div>
-          <a
-            className="mt-8 grid min-h-72 place-items-center rounded-[28px] border border-rose-dust/10 bg-milk p-8 text-center shadow-soft transition hover:-translate-y-1"
-            href={contacts.mapUrl}
-            target="_blank"
-            rel="noreferrer"
-          >
-            {/* Замените ссылку на карту в файле config/contacts.ts. */}
-            <div>
-              <p className="font-display text-5xl font-bold text-graphite">Карта</p>
-              <p className="mt-3 text-taupe">Открыть адрес на Яндекс.Картах</p>
-            </div>
-          </a>
+          <div className="mt-8 overflow-hidden rounded-[28px] border border-rose-dust/10 bg-milk shadow-soft">
+            {/* Замените ссылки на карту в файле config/contacts.ts. */}
+            <iframe
+              src={contacts.mapEmbedUrl}
+              title="Линия Букета на Яндекс.Картах"
+              className="h-80 w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+            <a
+              className="block px-6 py-4 text-sm font-semibold text-rose-dust transition hover:bg-white"
+              href={contacts.mapUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Открыть маршрут в Яндекс.Картах
+            </a>
+          </div>
         </div>
 
         <form onSubmit={handleSubmit} className="rounded-[34px] bg-white p-8 shadow-soft sm:p-10">

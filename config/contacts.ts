@@ -12,7 +12,9 @@ export const contacts = {
   // Замените время работы на актуальное.
   workingHours: "Ежедневно, 09:00-22:00",
   // Замените ссылку на карточку организации в Яндекс.Картах.
-  mapUrl: "https://yandex.ru/maps/org/101703110083?si=9g2v0ev05n92mau706f4mpzp2r"
+  mapUrl: "https://yandex.ru/maps/org/101703110083?si=9g2v0ev05n92mau706f4mpzp2r",
+  // Замените embed-ссылку, если будете использовать другой виджет Яндекс.Карт.
+  mapEmbedUrl: "https://yandex.ru/map-widget/v1/?oid=101703110083"
 };
 
 export function vkUrl() {
