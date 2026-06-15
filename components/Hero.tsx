@@ -50,16 +50,16 @@ export function Hero() {
         </div>
 
         <div className="relative min-h-[440px] lg:min-h-[620px]">
-          <div className="absolute inset-0 rounded-[44px] bg-white shadow-editorial" />
-          <div className="relative h-full overflow-hidden rounded-[44px] border border-white/80">
+          <div className="absolute inset-0 rounded-[44px] bg-blush shadow-editorial" />
+          <div className="relative h-full overflow-hidden rounded-[44px] border border-white/80 bg-blush">
             {/* Замените src на главное фото букета в студийном свете. */}
             <Image
-              src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1400&q=90"
-              alt="Авторский букет Линия Букета в светлой студии"
+              src="/images/baskets/nebo_v_ladonyax.PNG"
+              alt="Авторский букет Линия Букета"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
+              className="object-cover object-center"
             />
             <div className="absolute bottom-5 left-5 right-5 rounded-[28px] border border-white/60 bg-milk/90 p-5 backdrop-blur">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-rose-dust">Сегодня в наличии</p>
