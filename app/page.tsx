@@ -8,7 +8,7 @@ import { Hero } from "@/components/Hero";
 import { HowToOrder } from "@/components/HowToOrder";
 import { PopularBouquets } from "@/components/PopularBouquets";
 import { Reviews } from "@/components/Reviews";
-import { WeddingBouquets } from "@/components/WeddingBouquets";
+import { FlowerPalette } from "@/components/FlowerPalette";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <Hero />
         <Catalog />
         <PopularBouquets />
-        <WeddingBouquets />
+        <FlowerPalette />
         <HowToOrder />
         <Delivery />
         <Reviews />

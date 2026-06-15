@@ -5,11 +5,11 @@ const deliveryItems = [
   },
   {
     title: "Самовывоз",
-    text: "Самовывоз возможен по договорённости после подтверждения времени готовности букета."
+    text: "Самовывоз возможен по договорённости после подтверждения времени готовности заказа."
   },
   {
     title: "Срочные заказы",
-    text: "Срочные букеты собираем при наличии подходящих цветов и свободного интервала доставки."
+    text: "Срочные букеты и поштучные цветы собираем при наличии подходящих цветов и свободного интервала доставки."
   },
   {
     title: "Стоимость",
@@ -24,7 +24,7 @@ export function Delivery() {
         <div className="max-w-3xl">
           <p className="mb-4 text-xs font-bold uppercase tracking-[0.18em] text-rose-dust">Доставка</p>
           <h2 className="font-display text-5xl font-bold text-graphite sm:text-6xl">
-            Бережно привезём букет по Москве
+            Бережно привезём цветы по Москве
           </h2>
         </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

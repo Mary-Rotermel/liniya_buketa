@@ -16,7 +16,7 @@ npm run dev
 Все контакты вынесены в `config/contacts.ts`:
 
 - телефон
-- WhatsApp
+- VK
 - Telegram
 - Instagram
 - адрес
@@ -28,7 +28,7 @@ npm run dev
 
 Главное фото hero-блока находится в `components/Hero.tsx`.
 
-Фото свадебного блока находится в `components/WeddingBouquets.tsx`.
+Фото блока «Цветочная палитра» находится в `components/FlowerPalette.tsx`.
 
 В коде оставлены комментарии рядом с местами замены.
 

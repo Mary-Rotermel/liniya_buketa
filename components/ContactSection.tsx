@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { contacts, phoneHref, telegramUrl, whatsappUrl } from "@/config/contacts";
+import { contacts, phoneHref, telegramUrl, vkUrl } from "@/config/contacts";
 
 export function ContactSection() {
   const [message, setMessage] = useState("");
@@ -25,8 +25,8 @@ export function ContactSection() {
             <a className="w-fit text-rose-dust" href={phoneHref()}>
               {contacts.phone}
             </a>
-            <a className="w-fit text-rose-dust" href={whatsappUrl("Здравствуйте! Хочу заказать букет.")} target="_blank" rel="noreferrer">
-              WhatsApp
+            <a className="w-fit text-rose-dust" href={vkUrl()} target="_blank" rel="noreferrer">
+              ВКонтакте
             </a>
             <a className="w-fit text-rose-dust" href={telegramUrl()} target="_blank" rel="noreferrer">
               Telegram
@@ -37,13 +37,18 @@ export function ContactSection() {
             <p>{contacts.address}</p>
             <p>{contacts.workingHours}</p>
           </div>
-          <div className="mt-8 grid min-h-72 place-items-center rounded-[28px] border border-rose-dust/10 bg-milk p-8 text-center shadow-soft">
-            {/* Замените этот блок на iframe Яндекс.Карты с фактическим адресом. */}
+          <a
+            className="mt-8 grid min-h-72 place-items-center rounded-[28px] border border-rose-dust/10 bg-milk p-8 text-center shadow-soft transition hover:-translate-y-1"
+            href={contacts.mapUrl}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {/* Замените ссылку на карту в файле config/contacts.ts. */}
             <div>
               <p className="font-display text-5xl font-bold text-graphite">Карта</p>
-              <p className="mt-3 text-taupe">Место для Яндекс.Карты</p>
+              <p className="mt-3 text-taupe">Открыть адрес на Яндекс.Картах</p>
             </div>
-          </div>
+          </a>
         </div>
 
         <form onSubmit={handleSubmit} className="rounded-[34px] bg-white p-8 shadow-soft sm:p-10">

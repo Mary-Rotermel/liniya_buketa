@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ButtonLink } from "@/components/ButtonLink";
-import { telegramUrl, whatsappUrl } from "@/config/contacts";
+import { telegramUrl, vkUrl } from "@/config/contacts";
 
 export function Hero() {
   const message = "Здравствуйте! Хочу заказать букет в Линия Букета.";
@@ -10,7 +10,7 @@ export function Hero() {
       <div className="section-shell grid min-h-[760px] items-center gap-10 py-16 lg:grid-cols-[1.02fr_0.98fr] lg:py-20">
         <div className="relative z-10 max-w-3xl">
           <p className="mb-5 text-xs font-bold uppercase tracking-[0.18em] text-rose-dust">
-            Цветочный магазин в Москве
+            Цветочный магазин в Беляево
           </p>
           <p className="mb-3 font-display text-4xl font-bold text-rose-dust sm:text-5xl">
             Линия Букета
@@ -19,12 +19,12 @@ export function Hero() {
             Букеты, которые говорят за вас
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-taupe sm:text-xl">
-            Авторские букеты, свадебная флористика и доставка цветов по Москве
+            Авторские букеты, поштучные цветы и доставка цветов по Москве
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="#popular">Выбрать букет</ButtonLink>
-            <ButtonLink href={whatsappUrl(message)} external variant="secondary">
-              Написать в WhatsApp
+            <ButtonLink href={vkUrl()} external variant="secondary">
+              Написать ВКонтакте
             </ButtonLink>
             <ButtonLink href={telegramUrl(message)} external variant="secondary">
               Написать в Telegram

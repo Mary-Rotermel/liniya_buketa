@@ -3,14 +3,14 @@ const benefits = [
   "Авторская сборка",
   "Доставка по Москве",
   "Индивидуальный подход",
-  "Свадебные букеты",
+  "Поштучные цветы",
   "Фото букета перед отправкой"
 ];
 
 const categories = [
   "Авторские букеты",
   "Монобукеты",
-  "Свадебные букеты",
+  "Цветочная палитра",
   "Цветочные композиции",
   "Цветы в коробке",
   "Открытки и дополнения"
@@ -36,7 +36,7 @@ export function Catalog() {
             </h2>
           </div>
           <p className="max-w-md text-taupe">
-            Собираем букеты под настроение, бюджет и повод. Можно выбрать готовый вариант или отправить референс.
+            Собираем букеты под настроение, бюджет и повод. Можно выбрать готовый вариант, отправить референс или собрать композицию из любимых цветов.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export function Catalog() {
           {categories.map((category, index) => (
             <a
               key={category}
-              href={category.includes("Свадебные") ? "#wedding" : "#popular"}
+              href={category.includes("палитра") || category.includes("Палитра") ? "#palette" : "#popular"}
               className="group rounded-[28px] border border-rose-dust/10 bg-white p-7 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-rose-dust/30"
             >
               <span className="text-sm font-semibold text-rose-dust">{String(index + 1).padStart(2, "0")}</span>

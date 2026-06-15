@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { products } from "@/data/products";
-import { telegramUrl, whatsappUrl } from "@/config/contacts";
+import { telegramUrl, vkUrl } from "@/config/contacts";
 
 export function PopularBouquets() {
   return (
@@ -42,12 +42,12 @@ export function PopularBouquets() {
                   <p className="mt-5 text-lg font-semibold text-graphite">{product.price}</p>
                   <div className="mt-5 grid grid-cols-2 gap-3">
                     <a
-                      href={whatsappUrl(orderText)}
+                      href={vkUrl()}
                       target="_blank"
                       rel="noreferrer"
                       className="focus-ring rounded-full bg-rose-dust px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#9a6f77]"
                     >
-                      WhatsApp
+                      VK
                     </a>
                     <a
                       href={telegramUrl(orderText)}

@@ -1,8 +1,8 @@
 export const contacts = {
   // Замените телефон на актуальный номер магазина.
   phone: "+7 925 230-12-22",
-  // Замените номер в международном формате без плюса.
-  whatsappPhone: "79252301222",
+  // Замените ссылку VK на актуальную страницу или сообщения сообщества.
+  vkUrl: "https://vk.ru/club239310791",
   // Замените username Telegram на актуальный, без символа @.
   telegramUsername: "liniyabuketa",
   // Замените ссылку Instagram на актуальную.
@@ -10,11 +10,13 @@ export const contacts = {
   // Замените адрес на фактический адрес студии или пункта самовывоза.
   address: "Москва, ЮЗАО, Профсоюзная ул. 104",
   // Замените время работы на актуальное.
-  workingHours: "Ежедневно, 09:00-22:00"
+  workingHours: "Ежедневно, 09:00-22:00",
+  // Замените ссылку на карточку организации в Яндекс.Картах.
+  mapUrl: "https://yandex.ru/maps/org/101703110083?si=9g2v0ev05n92mau706f4mpzp2r"
 };
 
-export function whatsappUrl(text: string) {
-  return `https://wa.me/${contacts.whatsappPhone}?text=${encodeURIComponent(text)}`;
+export function vkUrl() {
+  return contacts.vkUrl;
 }
 
 export function telegramUrl(text?: string) {
