@@ -27,7 +27,7 @@ export function PopularBouquets() {
                 key={product.name}
                 className="group overflow-hidden rounded-[30px] border border-rose-dust/10 bg-milk shadow-soft transition duration-200 hover:-translate-y-1"
               >
-                <div className="relative aspect-[4/5] overflow-hidden bg-porcelain">
+                <div className="relative aspect-[4/5] overflow-hidden bg-[#e6e4e1]">
                   <Image
                     src={product.image}
                     alt={product.alt}
@@ -35,6 +35,18 @@ export function PopularBouquets() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
                     className="object-cover transition duration-500 group-hover:scale-105"
                   />
+                  <div
+                    aria-hidden="true"
+                    className="absolute left-5 top-5 h-20 w-20 overflow-hidden rounded-full border border-white/50 bg-blush/35 opacity-45 shadow-sm mix-blend-multiply sm:h-24 sm:w-24"
+                  >
+                    <Image
+                      src="/images/logo.png"
+                      alt=""
+                      fill
+                      sizes="96px"
+                      className="object-cover object-center"
+                    />
+                  </div>
                 </div>
                 <div className="p-6">
                   <div className="flex items-start justify-between gap-3">
