@@ -35,18 +35,28 @@ export function PopularBouquets() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
                     className="object-cover transition duration-500 group-hover:scale-105"
                   />
-                  <div
-                    aria-hidden="true"
-                    className="absolute left-5 top-5 h-20 w-20 overflow-hidden rounded-full border border-white/50 bg-blush/35 opacity-45 shadow-sm mix-blend-multiply sm:h-24 sm:w-24"
-                  >
-                    <Image
-                      src="/images/logo.png"
-                      alt=""
-                      fill
-                      sizes="96px"
-                      className="object-cover object-center"
-                    />
-                  </div>
+                  {!product.image.includes("soft-watercolor") && (
+                    <div aria-hidden="true" className="absolute left-5 top-5 w-28 text-white/60 drop-shadow-sm sm:left-6 sm:top-6 sm:w-32">
+                      <div className="relative aspect-square">
+                        <div className="absolute inset-0 rounded-full border border-white/40" />
+                        <div className="absolute -left-1 top-2 h-24 w-14 rounded-l-full border-l border-t border-white/35 sm:h-28 sm:w-16" />
+                        <div className="absolute -right-1 top-2 h-24 w-14 rounded-r-full border-r border-t border-white/35 sm:h-28 sm:w-16" />
+                        <div className="absolute inset-x-2 top-7 text-center font-display text-[1.25rem] font-bold uppercase leading-[0.85] tracking-[0.08em] sm:top-8 sm:text-[1.45rem]">
+                          Линия
+                          <br />
+                          Букета
+                        </div>
+                        <div className="absolute inset-x-4 top-[4.45rem] text-center text-[0.38rem] font-bold uppercase leading-tight tracking-[0.16em] sm:top-[5rem] sm:text-[0.42rem]">
+                          Цветы, которые
+                          <br />
+                          говорят о важном
+                        </div>
+                        <div className="absolute inset-x-0 bottom-8 text-center font-display text-base italic leading-none sm:bottom-9 sm:text-lg">
+                          Линия Букета
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
                 <div className="p-6">
                   <div className="flex items-start justify-between gap-3">
