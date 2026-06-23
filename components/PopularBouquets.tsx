@@ -37,9 +37,13 @@ export function PopularBouquets() {
                   />
                 </div>
                 <div className="p-6">
-                  <div className="flex items-start justify-between gap-4">
-                    <h3 className="font-display text-3xl font-bold leading-none text-ink">{product.name}</h3>
-                    <p className="shrink-0 rounded-full bg-white px-3 py-1 text-sm font-bold text-rose-dust">{product.price}</p>
+                  <div className="flex items-start justify-between gap-3">
+                    <h3 className="min-w-0 flex-1 font-display text-[2rem] font-bold leading-none text-ink sm:text-3xl">
+                      {product.name}
+                    </h3>
+                    <p className="max-w-full shrink-0 whitespace-nowrap rounded-full bg-white px-3 py-1 text-sm font-bold text-rose-dust">
+                      {product.price}
+                    </p>
                   </div>
                   <p className="mt-3 min-h-12 text-sm leading-6 text-taupe">{product.composition}</p>
                   <div className="mt-5 grid grid-cols-2 gap-3">
