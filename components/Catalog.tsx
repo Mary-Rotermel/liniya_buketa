@@ -1,3 +1,5 @@
+import { productCategories } from "@/data/products";
+
 const benefits = [
   { title: "Свежие поставки", text: "Подбираем цветы по сезону и собираем заказ только после согласования." },
   { title: "Авторская сборка", text: "Собираем не по шаблону, а под настроение, повод и бюджет." },
@@ -5,14 +7,14 @@ const benefits = [
   { title: "Фото перед отправкой", text: "Покажем готовый букет до доставки или самовывоза." }
 ];
 
-const categories = [
-  { title: "Авторские букеты", text: "Готовые композиции с возможностью адаптации." },
-  { title: "Монобукеты", text: "Один цветок, один оттенок, выразительный объём." },
-  { title: "Цветочная палитра", text: "Поштучные цветы для самостоятельной сборки." },
-  { title: "Цветочные композиции", text: "Настольные и интерьерные варианты." },
-  { title: "Цветы в коробке", text: "Подарок, который удобно вручать и перевозить." },
-  { title: "Открытки и дополнения", text: "Небольшие детали для личного сообщения." }
-];
+const categoryDescriptions = {
+  "Авторские букеты": "Готовые букеты с возможностью адаптации.",
+  "Монобукеты": "Один вид цветов в выразительном объёме.",
+  "Искусственные цветы": "Долговечные декоративные варианты.",
+  "Мягкие игрушки": "Дополнение к букету или отдельный подарок.",
+  "Композиции": "Корзины, сумочки и интерьерные форматы.",
+  "Цветы поштучно": "Цветы для самостоятельной сборки букета."
+};
 
 export function Catalog() {
   return (
@@ -35,22 +37,22 @@ export function Catalog() {
             </h2>
           </div>
           <p className="max-w-md text-taupe">
-            Логика простая: готовый букет, монобукет, цветы поштучно или индивидуальный запрос. Всё можно обсудить в VK или Telegram.
+            Категории совпадают с витриной в Яндекс Картах: можно выбрать готовый букет, композицию, цветы поштучно или дополнение к подарку.
           </p>
         </div>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {categories.map((category, index) => (
+          {productCategories.map((category, index) => (
             <a
-              key={category.title}
-              href={category.title.includes("палитра") || category.title.includes("Палитра") ? "#palette" : "#popular"}
+              key={category}
+              href={category === "Композиции" ? "#compositions" : "#popular"}
               className="group rounded-[30px] border border-rose-dust/10 bg-white p-7 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-rose-dust/35"
             >
               <span className="text-sm font-semibold text-rose-dust">{String(index + 1).padStart(2, "0")}</span>
-              <h3 className="mt-8 font-display text-4xl font-bold leading-none text-ink">{category.title}</h3>
-              <p className="mt-4 min-h-12 text-sm leading-6 text-taupe">{category.text}</p>
+              <h3 className="mt-8 font-display text-4xl font-bold leading-none text-ink">{category}</h3>
+              <p className="mt-4 min-h-12 text-sm leading-6 text-taupe">{categoryDescriptions[category]}</p>
               <span className="mt-6 inline-block text-sm font-semibold text-taupe transition group-hover:text-rose-dust">
-                Смотреть
+                Перейти к витрине
               </span>
             </a>
           ))}
