@@ -9,7 +9,7 @@ import { vkUrl } from "@/config/contacts";
 const navItems = [
   { href: "#catalog", label: "Каталог" },
   { href: "#popular", label: "Готовые букеты" },
-  { href: "#palette", label: "Палитра" },
+  { href: "#palette-products", label: "Палитра" },
   { href: "#order", label: "Как заказать" },
   { href: "#delivery", label: "Доставка" },
   { href: "#contacts", label: "Контакты" }
