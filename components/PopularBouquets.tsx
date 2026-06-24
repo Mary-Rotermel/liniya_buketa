@@ -22,9 +22,10 @@ export function PopularBouquets() {
         <div className="mt-10 space-y-14">
           {productCategories.map((category) => {
             const categoryProducts = products.filter((product) => product.category === category);
+            const sectionId = category === "Композиции" ? "compositions" : category === "Цветочная палитра" ? "palette-products" : undefined;
 
             return (
-              <section key={category} id={category === "Композиции" ? "compositions" : undefined}>
+              <section key={category} id={sectionId}>
                 <div className="mb-6 flex items-end justify-between gap-4">
                   <h3 className="font-display text-4xl font-bold leading-none text-ink sm:text-5xl">{category}</h3>
                   <p className="text-sm font-semibold text-taupe">{categoryProducts.length ? `${categoryProducts.length} позиций` : "Скоро добавим"}</p>
@@ -45,23 +46,34 @@ export function PopularBouquets() {
                             className="relative block aspect-[4/5] overflow-hidden bg-[#e6e4e1]"
                             aria-label={`Открыть страницу товара ${product.name}`}
                           >
-                            <Image
-                              src={product.image}
-                              alt={product.alt}
-                              fill
-                              sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
-                              className="object-cover transition duration-500 group-hover:scale-105"
-                            />
+                            {product.image ? (
+                              <Image
+                                src={product.image}
+                                alt={product.alt}
+                                fill
+                                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 25vw"
+                                className="object-cover transition duration-500 group-hover:scale-105"
+                              />
+                            ) : (
+                              <div className="flex h-full flex-col items-center justify-center gap-4 bg-[#e6e4e1] px-8 text-center">
+                                <span className="font-display text-3xl font-bold leading-none text-ink">
+                                  Фото скоро добавим
+                                </span>
+                                <span className="text-sm leading-6 text-taupe">
+                                  Товар уже доступен для заказа, фото появится после обновления витрины.
+                                </span>
+                              </div>
+                            )}
                           </Link>
                           <div className="p-6">
-                            <div className="flex items-start justify-between gap-3">
+                            <div className="flex flex-col items-start gap-3">
                               <Link
                                 href={`/catalog/${product.slug}`}
                                 className="min-w-0 flex-1 font-display text-[2rem] font-bold leading-none text-ink transition hover:text-rose-dust sm:text-3xl"
                               >
                                 {product.name}
                               </Link>
-                              <p className="max-w-full shrink-0 whitespace-nowrap rounded-full bg-white px-3 py-1 text-sm font-bold text-rose-dust">
+                              <p className="max-w-full rounded-full bg-white px-3 py-1 text-sm font-bold text-rose-dust">
                                 {product.price}
                               </p>
                             </div>

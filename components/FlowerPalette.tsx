@@ -31,7 +31,7 @@ export function FlowerPalette() {
           <div>
             <p className="eyebrow mb-4">Цветочная палитра</p>
             <h2 className="font-display text-5xl font-bold leading-none text-graphite sm:text-6xl">
-              Цветы поштучно, букет по вашему вкусу
+              Поштучные цветы, букет по вашему вкусу
             </h2>
             <div className="mt-8 grid gap-4 text-taupe">
               <p>

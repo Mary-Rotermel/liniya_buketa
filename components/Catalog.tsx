@@ -13,7 +13,7 @@ const categoryDescriptions = {
   "Искусственные цветы": "Долговечные декоративные варианты.",
   "Мягкие игрушки": "Дополнение к букету или отдельный подарок.",
   "Композиции": "Корзины, сумочки и интерьерные форматы.",
-  "Цветы поштучно": "Цветы для самостоятельной сборки букета."
+  "Цветочная палитра": "Поштучные цветы для самостоятельной сборки букета."
 };
 
 export function Catalog() {
@@ -37,7 +37,7 @@ export function Catalog() {
             </h2>
           </div>
           <p className="max-w-md text-taupe">
-            Категории совпадают с витриной в Яндекс Картах: можно выбрать готовый букет, композицию, цветы поштучно или дополнение к подарку.
+            Категории совпадают с витриной в Яндекс Картах: можно выбрать готовый букет, композицию, цветочную палитру или дополнение к подарку.
           </p>
         </div>
 
@@ -45,7 +45,7 @@ export function Catalog() {
           {productCategories.map((category, index) => (
             <a
               key={category}
-              href={category === "Композиции" ? "#compositions" : "#popular"}
+              href={category === "Композиции" ? "#compositions" : category === "Цветочная палитра" ? "#palette-products" : "#popular"}
               className="group rounded-[30px] border border-rose-dust/10 bg-white p-7 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-rose-dust/35"
             >
               <span className="text-sm font-semibold text-rose-dust">{String(index + 1).padStart(2, "0")}</span>

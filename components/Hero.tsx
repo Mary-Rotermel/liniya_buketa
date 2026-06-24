@@ -36,7 +36,7 @@ export function Hero() {
           <div className="mt-8 grid max-w-2xl gap-3 text-sm font-semibold text-ink sm:grid-cols-3">
             <span className="rounded-full border border-rose-dust/15 bg-white/70 px-4 py-3">Фото перед отправкой</span>
             <span className="rounded-full border border-rose-dust/15 bg-white/70 px-4 py-3">Сборка от 30 минут</span>
-            <span className="rounded-full border border-rose-dust/15 bg-white/70 px-4 py-3">Цветы поштучно</span>
+            <span className="rounded-full border border-rose-dust/15 bg-white/70 px-4 py-3">Цветочная палитра</span>
           </div>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="#popular">Выбрать букет</ButtonLink>

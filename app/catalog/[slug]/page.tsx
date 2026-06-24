@@ -55,14 +55,25 @@ export default function ProductPage({ params }: ProductPageProps) {
             <div className="mt-8 grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
               <div className="overflow-hidden rounded-[36px] border border-rose-dust/10 bg-[#e6e4e1] shadow-editorial">
                 <div className="relative aspect-[4/5]">
-                  <Image
-                    src={product.image}
-                    alt={product.alt}
-                    fill
-                    priority
-                    sizes="(max-width: 1024px) 100vw, 48vw"
-                    className="object-cover"
-                  />
+                  {product.image ? (
+                    <Image
+                      src={product.image}
+                      alt={product.alt}
+                      fill
+                      priority
+                      sizes="(max-width: 1024px) 100vw, 48vw"
+                      className="object-cover"
+                    />
+                  ) : (
+                    <div className="flex h-full flex-col items-center justify-center gap-5 px-10 text-center">
+                      <span className="font-display text-5xl font-bold leading-none text-ink">
+                        Фото скоро добавим
+                      </span>
+                      <span className="max-w-sm text-base leading-7 text-taupe">
+                        Товар уже можно заказать, а фотографию добавим после обновления витрины.
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
 
