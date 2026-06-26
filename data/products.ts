@@ -208,6 +208,7 @@ export const products: Product[] = [
     category: "Искусственные цветы",
     composition: "Искусственные тюльпаны 5 шт",
     price: "700 ₽",
+    image: "/images/bouquets/iskusstvennye-tyulpany-5-shtuk.PNG",
     alt: "Искусственные тюльпаны букет из 5 штук",
     details: "Декоративный букет из искусственных тюльпанов. Подойдёт для интерьера, витрины или долговечного подарка."
   },
@@ -217,6 +218,7 @@ export const products: Product[] = [
     category: "Искусственные цветы",
     composition: "Искусственный ранункулюс, 1 шт",
     price: "700 ₽",
+    image: "/images/bouquets/iskusstvennyj-ranunkulyus.PNG",
     alt: "Искусственный ранункулюс",
     details: "Искусственный ранункулюс для декора и сборных композиций. Можно заказать нужное количество стеблей."
   },
@@ -226,6 +228,7 @@ export const products: Product[] = [
     category: "Искусственные цветы",
     composition: "Искусственная орхидея, 1 шт",
     price: "600 ₽",
+    image: "/images/bouquets/iskusstvennaya-orhideya.PNG",
     alt: "Искусственная орхидея",
     details: "Искусственная орхидея для интерьерных композиций. Смотрится аккуратно и не требует ухода."
   },
@@ -235,6 +238,7 @@ export const products: Product[] = [
     category: "Искусственные цветы",
     composition: "Искусственный дельфиниум, 1 шт",
     price: "1 000 ₽",
+    image: "/images/bouquets/iskusstvennyj-delfinium.PNG",
     alt: "Искусственный дельфиниум",
     details: "Высокий искусственный дельфиниум для воздушных интерьерных букетов и декоративных акцентов."
   },
@@ -244,6 +248,7 @@ export const products: Product[] = [
     category: "Искусственные цветы",
     composition: "Искусственная гортензия, 1 шт",
     price: "900 ₽",
+    image: "/images/bouquets/iskusstvennaya-gortenziya.PNG",
     alt: "Искусственная гортензия",
     details: "Объёмная искусственная гортензия для композиций, витрин и домашнего декора."
   },
@@ -253,6 +258,7 @@ export const products: Product[] = [
     category: "Искусственные цветы",
     composition: "Искусственная протея, 1 шт",
     price: "1 000 ₽",
+    image: "/images/bouquets/iskusstvennaya-proteya.PNG",
     alt: "Искусственная протея",
     details: "Искусственная протея с выразительной формой. Подходит для необычных декоративных букетов."
   },
@@ -262,6 +268,7 @@ export const products: Product[] = [
     category: "Искусственные цветы",
     composition: "Искусственный мак, 1 шт",
     price: "800 ₽",
+    image: "/images/bouquets/iskusstvennyj-mak.PNG",
     alt: "Искусственный мак",
     details: "Искусственный мак в яркой гамме для декоративных композиций и интерьерных акцентов."
   },
@@ -271,6 +278,7 @@ export const products: Product[] = [
     category: "Искусственные цветы",
     composition: "Искусственная магнолия, 1 шт",
     price: "800 ₽",
+    image: "/images/bouquets/iskusstvennaya-magnoliya.PNG",
     alt: "Искусственная магнолия",
     details: "Искусственная магнолия для элегантных интерьерных композиций и долговечного декора."
   },
@@ -280,6 +288,7 @@ export const products: Product[] = [
     category: "Искусственные цветы",
     composition: "Искусственная кустовая роза, 1 шт",
     price: "400 ₽",
+    image: "/images/bouquets/iskusstvennaya-roza-kustovaya.PNG",
     alt: "Искусственная кустовая роза",
     details: "Искусственная кустовая роза для сборки декоративных букетов. Можно заказать поштучно."
   },
@@ -289,6 +298,7 @@ export const products: Product[] = [
     category: "Искусственные цветы",
     composition: "Искусственная мимоза, 1 шт",
     price: "460 ₽",
+    image: "/images/bouquets/iskusstvennaya-mimoza.PNG",
     alt: "Искусственная мимоза",
     details: "Искусственная мимоза для лёгких весенних композиций и яркого интерьерного декора."
   },
