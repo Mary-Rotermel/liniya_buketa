@@ -92,17 +92,6 @@ export const products: Product[] = [
     details: "Пышный букет в розовой гамме для заметного, праздничного подарка. Состав можно скорректировать по наличию цветов."
   },
   {
-    slug: "belye-tyulpany",
-    name: "Белые тюльпаны",
-    category: "Монобукеты",
-    composition: "Белые тюльпаны, декоративная зелень, плетёная корзина",
-    price: "от 6 300 ₽",
-    // Замените ссылку на реальное фото букета.
-    image: "/images/bouquets/white-tulip-basket.PNG",
-    alt: "Корзина с белыми тюльпанами и свежей зеленью",
-    details: "Чистая сезонная композиция из белых тюльпанов. Количество цветов можно увеличить или уменьшить под бюджет."
-  },
-  {
     slug: "rozy-medzhik-tajm",
     name: "Розы Меджик Тайм",
     category: "Цветочная палитра",
@@ -378,6 +367,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Лилии, упаковка, лента",
     price: "3 100 ₽",
+    image: "/images/bouquets/buket-iz-lilij.PNG",
     alt: "Букет из лилий",
     details: "Монобукет из лилий в лаконичной упаковке. Подойдёт для выразительного и нежного поздравления."
   },
@@ -387,6 +377,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Хризантемы нескольких оттенков, упаковка, лента",
     price: "5 100 ₽",
+    image: "/images/bouquets/miks-buket-iz-hrizantem.PNG",
     alt: "Микс букет из хризантем",
     details: "Пышный микс из хризантем разных оттенков. Хороший вариант для яркого, стойкого подарка."
   },
@@ -396,6 +387,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Хризантемы, упаковка, лента",
     price: "3 200 ₽",
+    image: "/images/bouquets/buket-iz-hrizantem.PNG",
     alt: "Букет из хризантем",
     details: "Классический букет из хризантем с аккуратной упаковкой. Состав и оттенок можно уточнить перед заказом."
   },
@@ -405,6 +397,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Одноголовые хризантемы, упаковка, лента",
     price: "3 100 ₽",
+    image: "/images/bouquets/buket-iz-odnogolovyh-hrizantem.PNG",
     alt: "Букет из одноголовых хризантем",
     details: "Объёмный букет из одноголовых хризантем. Подходит для дня рождения, благодарности и повседневного комплимента."
   },
@@ -414,6 +407,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Местные розы микс, упаковка, лента",
     price: "9 150 ₽",
+    image: "/images/bouquets/miks-buket-iz-roz-mestnyh.PNG",
     alt: "Микс букет из местных роз",
     details: "Пышный микс из местных роз в мягкой цветовой гамме. Оттенки можно согласовать по наличию."
   },
@@ -423,6 +417,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Кустовые хризантемы, упаковка, лента",
     price: "2 100 ₽",
+    image: "/images/bouquets/buket-iz-kustovyh-hrizantem.PNG",
     alt: "Букет из кустовых хризантем",
     details: "Нежный и стойкий букет из кустовых хризантем. Лёгкий вариант для приятного знака внимания."
   },
@@ -432,6 +427,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Фиолетовые хризантемы, упаковка, лента",
     price: "2 100 ₽",
+    image: "/images/bouquets/buket-iz-fioletovyh-hrizantem.PNG",
     alt: "Букет из фиолетовых хризантем",
     details: "Монобукет из фиолетовых хризантем для спокойного, но заметного цветового акцента."
   },
@@ -441,6 +437,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Танацетум 15 шт, упаковка, лента",
     price: "3 000 ₽",
+    image: "/images/bouquets/buket-iz-tanacetuma.PNG",
     alt: "Букет из танацетума",
     details: "Лёгкий полевой букет из 15 веточек танацетума. Смотрится естественно и свежо."
   },
@@ -450,6 +447,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Эквадорские розы 39 шт, упаковка, лента",
     price: "13 700 ₽",
+    image: "/images/bouquets/buket-iz-ekvadorskih-roz-39.PNG",
     alt: "Букет из 39 эквадорских роз",
     details: "Большой букет из 39 эквадорских роз. Выразительный подарок для особого случая."
   },
@@ -459,6 +457,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Гвоздики 15 шт, упаковка, лента",
     price: "3 500 ₽",
+    image: "/images/bouquets/buket-iz-15-gvozdik.PNG",
     alt: "Букет из 15 гвоздик",
     details: "Нежный букет из 15 гвоздик в аккуратной упаковке. Оттенок можно уточнить при заказе."
   },
@@ -468,6 +467,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Альстромерии 11 шт, упаковка, лента",
     price: "2 650 ₽",
+    image: "/images/bouquets/buket-iz-alstromerij.PNG",
     alt: "Букет из 11 альстромерий",
     details: "Букет из 11 альстромерий в естественной упаковке. Стойкий и лёгкий вариант для подарка."
   },
@@ -477,6 +477,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Местные розы 51 шт, упаковка, лента",
     price: "9 900 ₽",
+    image: "/images/bouquets/51-roza-mestnaya.PNG",
     alt: "Букет из 51 местной розы",
     details: "Крупный букет из 51 местной розы. Цвет роз можно согласовать по наличию."
   },
@@ -486,6 +487,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Эквадорские розы 11 шт, упаковка, лента",
     price: "3 700 ₽",
+    image: "/images/bouquets/11-ekvadorskih-roz.PNG",
     alt: "Букет из 11 эквадорских роз",
     details: "Лаконичный букет из 11 эквадорских роз. Подходит для романтичного комплимента."
   },
@@ -495,6 +497,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Эустомы, упаковка, лента",
     price: "5 150 ₽",
+    image: "/images/bouquets/buket-iz-eustom.PNG",
     alt: "Букет из эустом",
     details: "Нежный букет из эустом с воздушной фактурой. Оттенок и объём можно уточнить перед сборкой."
   },
@@ -504,17 +507,9 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Местные розы, упаковка, лента",
     price: "4 000 ₽",
+    image: "/images/bouquets/rozy-mestnye.PNG",
     alt: "Букет из местных роз",
     details: "Букет из местных роз в спокойной упаковке. Хороший вариант для классического цветочного подарка."
-  },
-  {
-    slug: "buket-roz",
-    name: "Букет роз",
-    category: "Монобукеты",
-    composition: "Розы, упаковка, лента",
-    price: "4 000 ₽",
-    alt: "Букет роз",
-    details: "Классический букет роз. Цвет и количество можно согласовать по наличию и бюджету."
   },
   {
     slug: "buket-iz-hrizantem-odnogolovyh",
@@ -522,6 +517,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Одноголовые хризантемы, упаковка, лента",
     price: "3 850 ₽",
+    image: "/images/bouquets/buket-iz-hrizantem-odnogolovyh.PNG",
     alt: "Букет из одноголовых хризантем",
     details: "Стойкий букет из одноголовых хризантем с плотной формой и свежей подачей."
   },
@@ -531,6 +527,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Гортензии, упаковка, лента",
     price: "4 200 ₽",
+    image: "/images/bouquets/buket-iz-gortenzij.PNG",
     alt: "Букет из гортензий",
     details: "Нежный объёмный букет из гортензий. Цветовую гамму можно подобрать по наличию."
   },
@@ -540,6 +537,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Хризантемы сантини, упаковка, лента",
     price: "2 200 ₽",
+    image: "/images/bouquets/buket-iz-hrizantem-santini.PNG",
     alt: "Букет из хризантем сантини",
     details: "Компактный букет из хризантем сантини. Стойкий, лёгкий и аккуратный подарок."
   },
@@ -549,6 +547,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Розовые хризантемы сантини, упаковка, лента",
     price: "2 200 ₽",
+    image: "/images/bouquets/buket-iz-rozovyh-hrizantem-santini.PNG",
     alt: "Букет из розовых хризантем сантини",
     details: "Нежный монобукет из розовых хризантем сантини. Подходит для мягкого комплимента."
   },
@@ -558,6 +557,7 @@ export const products: Product[] = [
     category: "Монобукеты",
     composition: "Кустовые розы микс, упаковка, лента",
     price: "4 000 ₽",
+    image: "/images/bouquets/miks-kustovyh-roz.PNG",
     alt: "Микс кустовых роз",
     details: "Букет из кустовых роз разных оттенков. Смотрится объёмно и нежно даже в компактном размере."
   },
