@@ -1,4 +1,4 @@
-import { productCategories } from "@/data/products";
+import { productCategories, productCategoryAnchors } from "@/data/products";
 
 const benefits = [
   { title: "Свежие поставки", text: "Подбираем цветы по сезону и собираем заказ только после согласования." },
@@ -45,7 +45,7 @@ export function Catalog() {
           {productCategories.map((category, index) => (
             <a
               key={category}
-              href={category === "Композиции" ? "#compositions" : category === "Цветочная палитра" ? "#palette-products" : "#popular"}
+              href={`#${productCategoryAnchors[category]}`}
               className="group rounded-[30px] border border-rose-dust/10 bg-white p-7 shadow-soft transition duration-200 hover:-translate-y-1 hover:border-rose-dust/35"
             >
               <span className="text-sm font-semibold text-rose-dust">{String(index + 1).padStart(2, "0")}</span>

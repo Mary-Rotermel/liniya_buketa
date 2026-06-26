@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { productCategories, products } from "@/data/products";
+import { productCategories, productCategoryAnchors, products } from "@/data/products";
 import { telegramUrl, vkUrl } from "@/config/contacts";
 
 export function PopularBouquets() {
@@ -22,7 +22,7 @@ export function PopularBouquets() {
         <div className="mt-10 space-y-14">
           {productCategories.map((category) => {
             const categoryProducts = products.filter((product) => product.category === category);
-            const sectionId = category === "Композиции" ? "compositions" : category === "Цветочная палитра" ? "palette-products" : undefined;
+            const sectionId = productCategoryAnchors[category];
 
             return (
               <section key={category} id={sectionId}>

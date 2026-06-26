@@ -26,6 +26,15 @@ export const productCategories: ProductCategory[] = [
   "Цветочная палитра"
 ];
 
+export const productCategoryAnchors: Record<ProductCategory, string> = {
+  "Авторские букеты": "author-bouquets",
+  "Монобукеты": "mono-bouquets",
+  "Искусственные цветы": "artificial-flowers",
+  "Мягкие игрушки": "soft-toys",
+  "Композиции": "compositions",
+  "Цветочная палитра": "palette-products"
+};
+
 export const products: Product[] = [
   {
     slug: "nebesnoe-prikosnovenie",
@@ -279,6 +288,7 @@ export const products: Product[] = [
     category: "Мягкие игрушки",
     composition: "Мягкая игрушка, 1 шт",
     price: "1 150 ₽",
+    image: "/images/bouquets/myagkaya-igrushka-obezyana-belaya.PNG",
     alt: "Мягкая игрушка белая обезьяна",
     details: "Мягкая игрушка белая обезьяна как самостоятельный подарок или дополнение к букету."
   },
@@ -288,6 +298,7 @@ export const products: Product[] = [
     category: "Мягкие игрушки",
     composition: "Мягкая игрушка, 1 шт",
     price: "2 600 ₽",
+    image: "/images/bouquets/myagkaya-igrushka-enot.PNG",
     alt: "Мягкая игрушка енот",
     details: "Мягкая игрушка енот в подарочной упаковке. Можно добавить к букету или заказать отдельно."
   },
@@ -297,6 +308,7 @@ export const products: Product[] = [
     category: "Мягкие игрушки",
     composition: "Мягкая игрушка, 1 шт",
     price: "2 600 ₽",
+    image: "/images/bouquets/myagkaya-igrushka-sobachka-v-krasnom-plate.PNG",
     alt: "Мягкая игрушка собачка в красном платье",
     details: "Подарочная мягкая игрушка собачка в красном платье. Подходит как милое дополнение к цветам."
   },
@@ -306,6 +318,7 @@ export const products: Product[] = [
     category: "Мягкие игрушки",
     composition: "Мягкая игрушка, 1 шт",
     price: "1 300 ₽",
+    image: "/images/bouquets/myagkaya-igrushka-chernaya-koshka.PNG",
     alt: "Мягкая игрушка черная кошка",
     details: "Мягкая игрушка черная кошка с сердцем. Можно добавить к заказу букета для более личного подарка."
   },
@@ -315,6 +328,7 @@ export const products: Product[] = [
     category: "Мягкие игрушки",
     composition: "Мягкая игрушка, 1 шт",
     price: "1 250 ₽",
+    image: "/images/bouquets/myagkaya-igrushka-begemotik.PNG",
     alt: "Мягкая игрушка бегемотик",
     details: "Мягкая игрушка бегемотик для детского или нежного поздравления вместе с букетом."
   },
@@ -324,6 +338,7 @@ export const products: Product[] = [
     category: "Мягкие игрушки",
     composition: "Мягкая игрушка, 1 шт",
     price: "2 780 ₽",
+    image: "/images/bouquets/myagkaya-igrushka-pudel.PNG",
     alt: "Мягкая игрушка пудель",
     details: "Мягкая игрушка пудель в подарочной коробке. Деликатное дополнение к цветочной композиции."
   },
@@ -333,6 +348,7 @@ export const products: Product[] = [
     category: "Мягкие игрушки",
     composition: "Мягкая игрушка, 1 шт",
     price: "2 740 ₽",
+    image: "/images/bouquets/myagkaya-igrushka-sobachka-v-plate.PNG",
     alt: "Мягкая игрушка собачка в платье",
     details: "Мягкая игрушка собачка в платье в подарочной коробке. Подойдёт для романтичного или детского подарка."
   },
