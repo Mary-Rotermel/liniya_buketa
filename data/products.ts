@@ -108,6 +108,7 @@ export const products: Product[] = [
     category: "Цветочная палитра",
     composition: "Роза Меджик Тайм, 1 шт",
     price: "300 ₽",
+    image: "/images/bouquets/rozy-medzhik-tajm.PNG",
     alt: "Роза Меджик Тайм поштучно",
     details: "Поштучная роза Меджик Тайм для самостоятельной сборки букета. Количество можно выбрать под нужный объём."
   },
@@ -117,6 +118,7 @@ export const products: Product[] = [
     category: "Цветочная палитра",
     composition: "Роза Канделайт, 1 шт",
     price: "300 ₽",
+    image: "/images/bouquets/rozy-kandelajt.PNG",
     alt: "Роза Канделайт поштучно",
     details: "Поштучная роза Канделайт в светлом оттенке. Подойдёт для нежных монобукетов и смешанных композиций."
   },
@@ -126,6 +128,7 @@ export const products: Product[] = [
     category: "Цветочная палитра",
     composition: "Роза Гоча, 1 шт",
     price: "300 ₽",
+    image: "/images/bouquets/rozy-gocha.PNG",
     alt: "Роза Гоча поштучно",
     details: "Поштучная роза Гоча насыщенного оттенка. Хорошо смотрится в ярких и контрастных букетах."
   },
@@ -135,6 +138,7 @@ export const products: Product[] = [
     category: "Цветочная палитра",
     composition: "Роза Эсперанса, 1 шт",
     price: "300 ₽",
+    image: "/images/bouquets/rozy-esperansa.PNG",
     alt: "Роза Эсперанса поштучно",
     details: "Поштучная роза Эсперанса с мягким переходом оттенков. Подходит для романтичных букетов."
   },
@@ -144,6 +148,7 @@ export const products: Product[] = [
     category: "Цветочная палитра",
     composition: "Роза Кабарет, 1 шт",
     price: "300 ₽",
+    image: "/images/bouquets/rozy-kabaret.PNG",
     alt: "Роза Кабарет поштучно",
     details: "Поштучная роза Кабарет с выразительной окраской. Можно использовать как акцент в сборном букете."
   },
@@ -153,6 +158,7 @@ export const products: Product[] = [
     category: "Цветочная палитра",
     composition: "Роза Лимонад, 1 шт",
     price: "300 ₽",
+    image: "/images/bouquets/rozy-limonad.PNG",
     alt: "Роза Лимонад поштучно",
     details: "Поштучная роза Лимонад в свежем зелёно-жёлтом оттенке. Хороша для необычных современных сочетаний."
   },
@@ -162,6 +168,7 @@ export const products: Product[] = [
     category: "Цветочная палитра",
     composition: "Роза Би свит, 1 шт",
     price: "300 ₽",
+    image: "/images/bouquets/rozy-bi-svit.PNG",
     alt: "Роза Би свит поштучно",
     details: "Поштучная роза Би свит в нежной розовой гамме. Подходит для мягких пастельных букетов."
   },
@@ -171,6 +178,7 @@ export const products: Product[] = [
     category: "Цветочная палитра",
     composition: "Роза Эксплорер, 1 шт",
     price: "300 ₽",
+    image: "/images/bouquets/roza-eksplorer.PNG",
     alt: "Роза Эксплорер поштучно",
     details: "Поштучная роза Эксплорер глубокого красного оттенка. Классический вариант для выразительного букета."
   },
@@ -180,6 +188,7 @@ export const products: Product[] = [
     category: "Цветочная палитра",
     composition: "Роза Свитнес, 1 шт",
     price: "300 ₽",
+    image: "/images/bouquets/roza-svitnes.JPG",
     alt: "Роза Свитнес поштучно",
     details: "Поштучная роза Свитнес с нежной двухцветной окраской. Хорошо дополняет светлые и розовые композиции."
   },
@@ -189,6 +198,7 @@ export const products: Product[] = [
     category: "Цветочная палитра",
     composition: "Роза мандарин, 1 шт",
     price: "300 ₽",
+    image: "/images/bouquets/rozy-mandarin.PNG",
     alt: "Роза мандарин поштучно",
     details: "Поштучная роза мандарин в тёплой розово-коралловой гамме. Подойдёт для ярких сезонных букетов."
   },
