@@ -39,7 +39,7 @@ export function PopularBouquets() {
                       return (
                         <article
                           key={product.name}
-                          className="group overflow-hidden rounded-[30px] border border-rose-dust/10 bg-milk shadow-soft transition duration-200 hover:-translate-y-1"
+                          className="group flex h-full flex-col overflow-hidden rounded-[30px] border border-rose-dust/10 bg-milk shadow-soft transition duration-200 hover:-translate-y-1"
                         >
                           <Link
                             href={`/catalog/${product.slug}`}
@@ -65,7 +65,7 @@ export function PopularBouquets() {
                               </div>
                             )}
                           </Link>
-                          <div className="p-6">
+                          <div className="flex flex-1 flex-col p-6">
                             <div className="flex flex-col items-start gap-3">
                               <Link
                                 href={`/catalog/${product.slug}`}
@@ -78,29 +78,31 @@ export function PopularBouquets() {
                               </p>
                             </div>
                             <p className="mt-3 min-h-12 text-sm leading-6 text-taupe">{product.composition}</p>
-                            <Link
-                              href={`/catalog/${product.slug}`}
-                              className="focus-ring mt-5 flex min-h-12 items-center justify-center rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-graphite"
-                            >
-                              Подробнее
-                            </Link>
-                            <div className="mt-3 grid grid-cols-2 gap-3">
-                              <a
-                                href={vkUrl()}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="focus-ring rounded-full bg-rose-dust px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#9a6f77]"
+                            <div className="mt-auto pt-5">
+                              <Link
+                                href={`/catalog/${product.slug}`}
+                                className="focus-ring flex min-h-12 items-center justify-center rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-graphite"
                               >
-                                VK
-                              </a>
-                              <a
-                                href={telegramUrl(orderText)}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="focus-ring rounded-full border border-rose-dust/25 bg-white px-4 py-3 text-center text-sm font-semibold text-rose-dust transition hover:border-rose-dust/50"
-                              >
-                                Telegram
-                              </a>
+                                Подробнее
+                              </Link>
+                              <div className="mt-3 grid grid-cols-2 gap-3">
+                                <a
+                                  href={vkUrl()}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="focus-ring rounded-full bg-rose-dust px-4 py-3 text-center text-sm font-semibold text-white transition hover:bg-[#9a6f77]"
+                                >
+                                  VK
+                                </a>
+                                <a
+                                  href={telegramUrl(orderText)}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="focus-ring rounded-full border border-rose-dust/25 bg-white px-4 py-3 text-center text-sm font-semibold text-rose-dust transition hover:border-rose-dust/50"
+                                >
+                                  Telegram
+                                </a>
+                              </div>
                             </div>
                           </div>
                         </article>
